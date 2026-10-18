@@ -97,6 +97,10 @@ Dashboard interactivo de **6 páginas** (Home · KPIs Globales · Ventas en el T
 
 ---
 
+**Informe ejecutivo** (hallazgos y recomendaciones de negocio, pensado para lectores no técnicos): [`INFORME_EJECUTIVO.md`](INFORME_EJECUTIVO.md).
+
+---
+
 ## Estructura del repositorio
 
 | Carpeta/Archivo | Contenido |
@@ -110,6 +114,18 @@ Dashboard interactivo de **6 páginas** (Home · KPIs Globales · Ventas en el T
 ## Stack
 
 Power BI Desktop · Power Query · DAX · Python · Pandas · Excel · Matplotlib · Seaborn
+
+---
+
+## Cómo reproducirlo
+
+```bash
+git clone https://github.com/mmelgarejo-ds/TechCore-Analytics.git
+cd TechCore-Analytics
+pip install -r requirements.txt
+```
+
+`Avance_2/2_modelo_relacional.ipynb` reconstruye el modelo relacional desde el CSV limpio (no incluido en el repo por tamaño; se genera siguiendo los pasos de limpieza documentados en el informe ejecutivo). `Avance_3/Avance_3_Dashboard_PowerBI.pbix` se abre directamente con Power BI Desktop.
 
 ---
 

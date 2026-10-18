@@ -7,6 +7,9 @@
 
 Dashboard de BI end-to-end sobre ventas de una empresa tecnológica ficticia (TechCore): desde la limpieza del dato crudo hasta un dashboard interactivo de 6 páginas con seguridad a nivel de fila. Módulo 3 — Soy Henry Data Science AI.
 
+<p align="center"><img src="figures/dashboard_kpis_globales.png" alt="Dashboard Power BI — KPIs Globales" width="90%"></p>
+<p align="center"><sub>Captura real del dashboard (Power BI Desktop) — página "Resumen Ejecutivo / KPIs Globales".</sub></p>
+
 ---
 
 ## Problema de negocio
@@ -106,6 +109,9 @@ Dashboard interactivo de **6 páginas** (Home · KPIs Globales · Ventas en el T
 ## Ejemplo de decisión que apoya
 
 Un Gerente Regional de Cali, con su rol de RLS activo (solo ve su propia ciudad), entra a "KPIs Globales" y ve que su sucursal genera 13% de las ventas totales. Compara contra Medellín en "Ventas en el Tiempo" sin filtro y confirma que la diferencia no viene de una base de clientes distinta — la distribución por edad y género es similar entre ciudades. Esa comparación, posible directamente en el dashboard sin pedirle un reporte ad hoc a nadie, es lo que sostiene la recomendación #1 de más abajo: el problema de Cali no es de demanda, es de presencia o capacidad comercial local, así que la inversión debería ir ahí y no en más estudios de mercado.
+
+<p align="center"><img src="figures/dashboard_ventas_tiempo.png" alt="Dashboard Power BI — Evolución de ventas" width="90%"></p>
+<p align="center"><sub>Captura real del dashboard — página "Evolución de Ventas", con el filtro de ciudad disponible a la izquierda.</sub></p>
 
 ---
 

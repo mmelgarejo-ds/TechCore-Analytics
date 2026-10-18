@@ -38,6 +38,16 @@ El análisis de 30.000 transacciones (2014-2025, 6 sucursales en 4 ciudades de C
 
 ---
 
-## 4. Metodología y fuentes
+## 4. Evidencia
+
+<p align="center"><img src="figures/dashboard_kpis_globales.png" alt="Dashboard Power BI — KPIs Globales" width="90%"></p>
+<p align="center"><sub>Captura real del dashboard (Power BI Desktop) — página "Resumen Ejecutivo / KPIs Globales".</sub></p>
+
+<p align="center"><img src="figures/dashboard_ventas_tiempo.png" alt="Dashboard Power BI — Evolución de ventas" width="90%"></p>
+<p align="center"><sub>Captura real del dashboard — página "Evolución de Ventas", con filtro de ciudad disponible.</sub></p>
+
+---
+
+## 5. Metodología y fuentes
 
 30.307 filas crudas de facturación (2014-2025), limpiadas en Power Query hasta 30.000 filas · modelo relacional de 8 tablas construido en Python (`Avance_2/`) · dashboard de Power BI con 6 páginas y Row Level Security (`Avance_3/`). Detalle completo del proceso de limpieza y modelado en el [README técnico](README.md) de este repositorio.

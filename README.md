@@ -97,6 +97,18 @@ Dashboard interactivo de **6 páginas** (Home · KPIs Globales · Ventas en el T
 
 ---
 
+## Preguntas de negocio que responde el dashboard
+
+- **¿Dónde está concentrado el negocio y dónde hay margen para crecer?** La página "Ventas en el Tiempo", filtrada por ciudad o sucursal, muestra que Medellín concentra el 43% de las ventas frente al 13% de Cali o Pereira — sin que la demografía de clientes (edad, género) explique la diferencia.
+- **¿Qué productos y marcas priorizar en stock y comunicación?** La página "Productos" aísla al HP Spectre x360 (7.726 unidades, 30% sobre el segundo lugar) y a Lenovo como marca líder en volumen y margen estimado.
+- **¿Cómo evaluar el desempeño real de cada vendedor?** La página "Vendedores" cruza ingresos totales con cantidad de facturas atendidas por persona — necesario porque el equipo tiene perfiles complementarios (ticket alto/pocos clientes vs. ticket bajo/muchos clientes) que un solo ranking por ingresos esconde.
+
+## Ejemplo de decisión que apoya
+
+Un Gerente Regional de Cali, con su rol de RLS activo (solo ve su propia ciudad), entra a "KPIs Globales" y ve que su sucursal genera 13% de las ventas totales. Compara contra Medellín en "Ventas en el Tiempo" sin filtro y confirma que la diferencia no viene de una base de clientes distinta — la distribución por edad y género es similar entre ciudades. Esa comparación, posible directamente en el dashboard sin pedirle un reporte ad hoc a nadie, es lo que sostiene la recomendación #1 de más abajo: el problema de Cali no es de demanda, es de presencia o capacidad comercial local, así que la inversión debería ir ahí y no en más estudios de mercado.
+
+---
+
 **Informe ejecutivo** (hallazgos y recomendaciones de negocio, pensado para lectores no técnicos): [`INFORME_EJECUTIVO.md`](INFORME_EJECUTIVO.md).
 
 ---

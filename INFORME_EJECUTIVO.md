@@ -33,7 +33,7 @@ El análisis de 30.000 transacciones (2014-2025, 6 sucursales en 4 ciudades de C
 ## 3. Limitaciones y supuestos
 
 - **El margen por marca es una estimación, no un dato real.** El dataset no incluye el costo unitario por producto, así que el margen se estimó por tramos de precio (equipos más caros → menor margen relativo). Es un supuesto documentado, no un hallazgo medido. Antes de tomar decisiones de pricing con este número, se recomienda incorporar el costo real del sistema de compras.
-- El dataset es una muestra ficticia de una empresa ficticia (ejercicio del Módulo 3 de Henry), no datos de una operación real.
+- El dataset es una muestra ficticia de una empresa ficticia, no datos de una operación real.
 - Los 11 años de histórico vienen de 30.000 facturas limpias, posterior a eliminar 307 duplicados exactos — es importante tener ese proceso de limpieza presente al interpretar cualquier cifra de "total histórico".
 
 ---
@@ -50,4 +50,4 @@ El análisis de 30.000 transacciones (2014-2025, 6 sucursales en 4 ciudades de C
 
 ## 5. Metodología y fuentes
 
-30.307 filas crudas de facturación (2014-2025), limpiadas en Power Query hasta 30.000 filas · modelo relacional de 8 tablas construido en Python (`Avance_2/`) · dashboard de Power BI con 6 páginas y Row Level Security (`Avance_3/`). Detalle completo del proceso de limpieza y modelado en el [README técnico](README.md) de este repositorio.
+30.307 filas originales de facturación (2014-2025), limpiadas en Power Query hasta 30.000 filas · modelo relacional de 8 tablas construido en Python (`Avance_2/`) · dashboard de Power BI con 6 páginas y Row Level Security (`Avance_3/`). Detalle completo del proceso de limpieza y modelado en el [README técnico](README.md) de este repositorio.

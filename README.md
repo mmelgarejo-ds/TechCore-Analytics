@@ -5,7 +5,7 @@
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
 ![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat&logo=powerbi&logoColor=black)
 
-Dashboard de BI end-to-end sobre ventas de una empresa tecnológica ficticia (TechCore): desde la limpieza del dato crudo hasta un dashboard interactivo de 6 páginas con seguridad a nivel de fila. Módulo 3 — Soy Henry Data Science AI.
+Dashboard de BI end-to-end sobre ventas de una empresa tecnológica ficticia (TechCore): desde la limpieza de los datos de origen hasta un dashboard interactivo de 6 páginas con seguridad a nivel de fila.
 
 <p align="center"><img src="figures/dashboard_kpis_globales.png" alt="Dashboard Power BI — KPIs Globales" width="90%"></p>
 <p align="center"><sub>Captura real del dashboard (Power BI Desktop) — página "Resumen Ejecutivo / KPIs Globales".</sub></p>
@@ -14,7 +14,7 @@ Dashboard de BI end-to-end sobre ventas de una empresa tecnológica ficticia (Te
 
 ## Problema de negocio
 
-TechCore necesita transformar sus datos de ventas crudos en inteligencia accionable: identificar sucursales con mejor desempeño, marcas más vendidas, tendencias temporales y comportamiento de clientes para apoyar decisiones comerciales.
+TechCore necesita transformar sus datos de ventas sin procesar en inteligencia accionable: identificar sucursales con mejor desempeño, marcas más vendidas, tendencias temporales y comportamiento de clientes para apoyar decisiones comerciales.
 
 ---
 
@@ -41,7 +41,7 @@ TechCore necesita transformar sus datos de ventas crudos en inteligencia acciona
 
 Trabajé sobre `ventas.csv` (30.307 filas, 30 columnas) en Power Query dentro de Power BI Desktop.
 
-**Hallazgos en el dato crudo:**
+**Hallazgos en los datos de origen:**
 - **307 facturas duplicadas** — mismo `VentaID` repetido con datos idénticos
 - **431 nulos en `CiudadSucursal`** (1.4%) — reconstruidos extrayendo la ciudad desde `SucursalNombre` con columna condicional, en vez de rellenar con "No especificado"
 - **`CantidadProducto2`/`3` con valores 10x inflados** (10 y 20 en vez de 1 y 2) — causado por el separador decimal: el CSV usa punto como decimal (formato anglosajón) y sin la configuración regional `en-US`, Power BI interpretaba "1.0" como mil. Lo detecté al notar que `Subtotal` no cuadraba con `Precio × Cantidad`
@@ -58,7 +58,7 @@ Descompuse la tabla plana limpia en **8 tablas relacionadas**: `Ciudades` (4) ·
 
 **Decisiones de diseño:**
 - **Identificación de clientes:** el dataset no trae `ClienteID`, así que identifiqué clientes únicos por `ClienteNombre + EmailCliente`. Encontré 4 nombres duplicados (ej. "Lucio del Hurtado" x2); verificando edad, email, teléfono y dirección confirmé que eran personas distintas con nombre coincidente, no el mismo cliente
-- **Descuento en `Facturas`, no en `DetalleFacturas`:** la consigna sugería lo segundo, pero el dato real (`DescuentoVenta`) viene a nivel de factura completa, no por producto — coloqué el campo donde el dato realmente vive
+- **Descuento en `Facturas`, no en `DetalleFacturas`:** el diseño original proponía lo segundo, pero el dato real (`DescuentoVenta`) viene a nivel de factura completa, no por producto — coloqué el campo donde el dato realmente vive
 - **Ciudad por sucursal:** usé la ciudad más frecuente registrada por sucursal (ignorando "No especificado") para evitar que 6 sucursales se partieran en 12 filas falsas
 - **Validación de integridad referencial:** 6 controles de FK huérfanas, los 6 en 0
 
@@ -150,3 +150,5 @@ pip install -r requirements.txt
 ## Autor
 
 Mauricio Melgarejo · [LinkedIn](https://www.linkedin.com/in/mmelgarejo-ds/) · [GitHub](https://github.com/mmelgarejo-ds)
+
+<sub>Proyecto desarrollado durante la carrera de Data Science de Henry (2026).</sub>
